@@ -1,0 +1,47 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 01:57:12",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Bandicam",
+                         "Id":  "BandicamCompany.Bandicam",
+                         "Desc":  "Verschoben vom Benutzer",
+                         "Category":  "Audio \u0026 Video"
+                     },
+                     {
+                         "Name":  "mpv.net",
+                         "Id":  "mpv.net",
+                         "Desc":  "Leichtgewichtiger Mediaplayer fuer alle Formate",
+                         "Category":  "Audio \u0026 Video"
+                     },
+                     {
+                         "Name":  "SplitCam",
+                         "Id":  "SplitCam.SplitCam",
+                         "Desc":  "Verschoben vom Benutzer",
+                         "Category":  "Audio \u0026 Video"
+                     },
+                     {
+                         "Name":  "VLC",
+                         "Id":  "VideoLAN.VLC",
+                         "Desc":  "Kostenloser Mediaplayer fuer alle Formate",
+                         "Category":  "Audio \u0026 Video"
+                     },
+                     {
+                         "Name":  "XSplit VCam",
+                         "Id":  "SplitmediaLabs.XSplitVCam",
+                         "Desc":  "KI-Hintergrundentfernung fuer Webcam",
+                         "Category":  "Audio \u0026 Video"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "SplitCam.SplitCam":  "Audio \u0026 Video",
+                              "BandicamCompany.Bandicam":  "Audio \u0026 Video"
+                          }
+}

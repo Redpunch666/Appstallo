@@ -1,0 +1,52 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 01:59:49",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Affinity",
+                         "Id":  "Canva.Affinity",
+                         "Desc":  "Professionelle Grafiksuite (Photo, Designer, Publisher)",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Canva",
+                         "Id":  "Canva.Canva",
+                         "Desc":  "Online-Designtool fuer Grafiken und Praesentationen",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "ente",
+                         "Id":  "ente-io.photos-desktop",
+                         "Desc":  "Ende-zu-Ende-verschluesselte Fotoverwaltung",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "GIMP 2",
+                         "Id":  "GIMP.GIMP.2",
+                         "Desc":  "Kostenlose Open-Source-Bildbearbeitung",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "ImageGlass",
+                         "Id":  "DuongDieuPhap.ImageGlass",
+                         "Desc":  "Schneller, schlanker Bildbetrachter",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Pinta",
+                         "Id":  "Pinta.Pinta",
+                         "Desc":  "Einfaches Bildbearbeitungsprogramm",
+                         "Category":  "Grafik \u0026 Design"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+
+                          }
+}

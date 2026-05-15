@@ -1,0 +1,87 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 02:04:33",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Corsair iCUE5",
+                         "Id":  "Corsair.iCUE.5",
+                         "Desc":  "RGB-Steuerung und Hardware-Ueberwachung",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "DYMO Connect",
+                         "Id":  "DYMO.DYMOConnect",
+                         "Desc":  "Treiber und Software fuer DYMO-Beschriftungsgeraete",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "Elgato Control Center",
+                         "Id":  "Elgato.ControlCenter",
+                         "Desc":  "Steuerung fuer Elgato Key Light und andere Elgato-Hardware",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "Elgato Stream Deck",
+                         "Id":  "Elgato.StreamDeck",
+                         "Desc":  "Software fuer das Elgato Stream Deck",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "Gainward EXPERTool",
+                         "Id":  "Gainward.EXPERTool",
+                         "Desc":  "Tuning utility for customized performance enhancements and efficient desktop management.",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "Insta360 Link",
+                         "Id":  "Insta360.Link.Controller",
+                         "Desc":  "Webcam-Steuerungssoftware fuer Insta360 Link",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "Jabra Direct",
+                         "Id":  "Jabra.Direct",
+                         "Desc":  "Headset-Verwaltung und Firmware-Updates fuer Jabra-Geraete",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "MSI Center",
+                         "Id":  "MSI.MSICenter",
+                         "Desc":  "Steuerung und Optimierung fuer MSI-Hardware",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "NVIDIA PhysX",
+                         "Id":  "Nvidia.PhysX",
+                         "Desc":  "Physik-Engine-Bibliothek fuer Spiele",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "Razer Synapse",
+                         "Id":  "Razer.RazerSynapse",
+                         "Desc":  "Treiber und Konfiguration fuer Razer-Peripherie",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "RGB Fusion",
+                         "Id":  "GIGABYTE.RGBFusion",
+                         "Desc":  "RGB-Steuerung fuer GIGABYTE-Hardware",
+                         "Category":  "Treiber \u0026 Hardware"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "Jabra.Direct":  "Treiber \u0026 Hardware",
+                              "Insta360.Link.Controller":  "Treiber \u0026 Hardware",
+                              "DYMO.DYMOConnect":  "Treiber \u0026 Hardware",
+                              "MSI.MSICenter":  "Treiber \u0026 Hardware",
+                              "GIGABYTE.RGBFusion":  "Treiber \u0026 Hardware",
+                              "Gainward.EXPERTool":  "Treiber \u0026 Hardware"
+                          }
+}

@@ -1,0 +1,105 @@
+﻿{
+    "Version":  "1.8.3",
+    "ExportDate":  "2026-05-13 03:51:03",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Firefox (DE)",
+                         "Id":  "Mozilla.Firefox.de",
+                         "Desc":  "Mozillas Open-Source-Webbrowser (Deutsch)",
+                         "Category":  "Browser \u0026 Internet"
+                     }
+                 ],
+    "DirectLinks":  [
+                        {
+                            "Name":  "AMD Chipsatztreiber",
+                            "Id":  "URL:https://www.amd.com/de/support/download/drivers.html",
+                            "Desc":  "Aktuelle AMD Chipsatztreiber - oeffnet AMD Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Armoury Crate (RTX 4090)",
+                            "Id":  "URL:https://armoury-crate.com/",
+                            "Desc":  "ASUS Armoury Crate fuer RTX 4090 - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Disk Space Explorer",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/disk-space-explorer-2023",
+                            "Desc":  "Kostenlose Festplattenanalyse - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Photo Commander 18",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/photo-commander-18",
+                            "Desc":  "Foto-Verwaltung und Bearbeitung (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Privacy Inspector",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/privacy-inspector-3",
+                            "Desc":  "Datenschutz-Analyse fuer Windows (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Uninstaller 16",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/uninstaller-16",
+                            "Desc":  "Vollstaendige Software-Deinstallation (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo WinOptimizer 28",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/winoptimizer",
+                            "Desc":  "System-Optimierung fuer Windows (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Brother MFC-L3770CDW Treiber",
+                            "Id":  "URL:https://www.brother.de/support/mfc-l3770cdw/downloads",
+                            "Desc":  "Komplettes Treiberbundle - oeffnet Brother Support-Seite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Creative App (Katana V2X)",
+                            "Id":  "URL:https://support.creative.com/Products/ProductDetails.aspx?catID=1264\u0026subCatID=1268\u0026prodID=23937",
+                            "Desc":  "Creative App fuer Soundblaster Katana V2X - oeffnet Supportseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Google App fuer Windows",
+                            "Id":  "URL:https://dl.google.com/googleapp/windows/stable/GoogleAppSetup.exe",
+                            "Desc":  "KI-Suche, Google Lens und Bildschirmsuche fuer Windows - startet Direktdownload",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Infomaniak kDrive",
+                            "Id":  "URL:https://www.infomaniak.com/drive/latest",
+                            "Desc":  "Schweizer Cloud-Sync-Client - startet Direktdownload",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "NVIDIA App",
+                            "Id":  "URL:https://www.nvidia.com/de-de/software/nvidia-app/",
+                            "Desc":  "NVIDIA Treiber und Optimierung (nicht in winget) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "RemoteRelay",
+                            "Id":  "URL:https://getremoterelay.com/?locale=de",
+                            "Desc":  "Wake-on-LAN und Remote-Steuerung - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Winstep Nexus Ultimate",
+                            "Id":  "URL:https://www.winstep.net/nexus.asp",
+                            "Desc":  "Animiertes Dock fuer Windows (Ultimate-Version) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        }
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+
+                          }
+}

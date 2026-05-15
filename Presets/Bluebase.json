@@ -1,0 +1,537 @@
+﻿{
+    "Version":  "1.8.3",
+    "ExportDate":  "2026-05-13 03:56:32",
+    "ExportMode":  "full",
+    "Programs":  [
+                     {
+                         "Name":  "mpv.net version 7.1.2.0",
+                         "Id":  "mpv.net",
+                         "Desc":  "mpv.net is a media player for Windows with a modern GUI.",
+                         "Category":  "Audio \u0026 Video"
+                     },
+                     {
+                         "Name":  "Brave",
+                         "Id":  "Brave.Brave",
+                         "Desc":  "The new Brave browser blocks ads and trackers that slow you down and invade your privacy.\r\n  Discover a new way of thinking about how the web can work.",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Firefox (DE)",
+                         "Id":  "Mozilla.Firefox.de",
+                         "Desc":  "Mozillas Open-Source-Webbrowser (Deutsch)",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Google Chrome",
+                         "Id":  "Google.Chrome.EXE",
+                         "Desc":  "A more simple, secure, and faster web browser than ever, with Google’s smarts built-in.",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "PWAsForFirefox",
+                         "Id":  "filips.FirefoxPWA",
+                         "Desc":  "Progressive Web Apps (PWAs) are web apps that use web APIs and features along with progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.\r\n  Al...",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "eM Client",
+                         "Id":  "eMClient.eMClient",
+                         "Desc":  "Fast email client with full Gmail, Hotmail and other services synchronization. Best replacement for MS Outlook or Thunderbird. Free version for Home users.",
+                         "Category":  "E-Mail \u0026 Kalender"
+                     },
+                     {
+                         "Name":  "Mozilla Thunderbird (x64 de)",
+                         "Id":  "Mozilla.Thunderbird.de",
+                         "Desc":  "Thunderbird is a free and open source email, newsfeed, chat, and calendaring client, that’s easy to set up and customize. One of the core principles of Thunderbird is the use and promotion of open sta...",
+                         "Category":  "E-Mail \u0026 Kalender"
+                     },
+                     {
+                         "Name":  "GitHub Desktop",
+                         "Id":  "GitHub.GitHubDesktop",
+                         "Desc":  "GitHub Desktop is an open-source Electron-based GitHub app. It is written in TypeScript and uses React.",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft .Net Native Runtime Package 2.2",
+                         "Id":  "Microsoft.DotNet.Native.Runtime",
+                         "Desc":  "A pre-compilation technology for building Universal Windows (UWP) applications in Visual Studio 2015 and later. Applications are automatically compiled to native code before they reach consumer device...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2008 Redistributable - …",
+                         "Id":  "Microsoft.VCRedist.2008.x86",
+                         "Desc":  "The Microsoft Visual C++ 2008 SP1 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run 32-bit applications developed with Visual C++ 2008 SP1 on a computer...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2010  x64 Redistributab…",
+                         "Id":  "Microsoft.VCRedist.2010.x64",
+                         "Desc":  "The Microsoft Visual C++ 2010 SP1 Redistributable Package (x64) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2010 SP1 on a computer...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2010  x86 Redistributab…",
+                         "Id":  "Microsoft.VCRedist.2010.x86",
+                         "Desc":  "The Microsoft Visual C++ 2010 SP1 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run 32-bit applications developed with Visual C++ 2010 SP1 on a computer...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2012 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2012.x86",
+                         "Desc":  "The Microsoft Visual C++ 2012 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run 32-bit applications developed with Visual C++ 2012 on a computer that do...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2012 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2012.x64",
+                         "Desc":  "The Microsoft Visual C++ 2012 Redistributable Package (x64) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2012 on a computer that do...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2013 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2013.x86",
+                         "Desc":  "The Microsoft Visual C++ 2013 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2013 on a computer that do...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2013 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2013.x64",
+                         "Desc":  "The Microsoft Visual C++ 2013 Redistributable Package (x64) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2013 on a computer that do...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ v14 Redistributable (x6…",
+                         "Id":  "Microsoft.VCRedist.2015+.x64",
+                         "Desc":  "The Microsoft Visual C++ v14 Redistributable Package (x64) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2015, 2017, 2019, 2022 and ...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ v14 Redistributable (x8…",
+                         "Id":  "Microsoft.VCRedist.2015+.x86",
+                         "Desc":  "The Microsoft Visual C++ v14 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run 32-bit applications developed with Visual C++ 2015, 2017, 2019, 2022 and ...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime - 6.0.36 (…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.6",
+                         "Desc":  ".NET is a free, cross-platform, open-source developer platform for building many different types of applications.",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime - 8.0.27 (…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.8",
+                         "Desc":  ".NET is a free, cross-platform, open-source developer platform for building many different types of applications.",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime - 9.0.16 (…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.9",
+                         "Desc":  ".NET is a free, cross-platform, open-source developer platform for building many different types of applications.",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime 10.0.8 (x6…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.10",
+                         "Desc":  ".NET is a free, cross-platform, open-source developer platform for building many different types of applications.",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Epic Games Launcher",
+                         "Id":  "EpicGames.EpicGamesLauncher",
+                         "Desc":  "The Epic Games Launcher provides access to the Epic Games Store and Unreal Engine. The Epic Games Store is a marketplace where you can find, purchase, download and play games.",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "GOG GALAXY",
+                         "Id":  "GOG.Galaxy",
+                         "Desc":  "GOG GALAXY 2.0 allows you to combine multiple game libraries into one and connect with your friends across all gaming platforms, consoles included!",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Playnite",
+                         "Id":  "Playnite.Playnite",
+                         "Desc":  "An open source video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Origin, Battle.net and Uplay.\r\n  Includes game emulation support, providing one unified int...",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Steam",
+                         "Id":  "Valve.Steam",
+                         "Desc":  "Steam is the ultimate destination for playing, discussing, and creating games.\r\n  Steam is a video game digital distribution service and storefront.\r\n  Steam offers features such as game server matchm...",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Ubisoft Connect",
+                         "Id":  "Ubisoft.Connect",
+                         "Desc":  "Ubisoft Connect is the ecosystem of players services for Ubisoft games across all platforms. It aims at giving the best environment for all players to enjoy their games and connect with each other wha...",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Vortex",
+                         "Id":  "NexusMods.Vortex",
+                         "Desc":  "Vortex is the new, modern mod manager from Nexus Mods.\r\n  It is designed to make modding your game as simple as possible for new users, while still providing enough control for more experienced vetera...",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Affinity",
+                         "Id":  "Canva.Affinity",
+                         "Desc":  "Award-winning integrated graphic design, photo-editing and publishing solution.",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Canva",
+                         "Id":  "Canva.Canva",
+                         "Desc":  "Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content.",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "ente 1.7.23",
+                         "Id":  "ente-io.photos-desktop",
+                         "Desc":  "Desktop client for ente.io",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "ImageGlass",
+                         "Id":  "DuongDieuPhap.ImageGlass",
+                         "Desc":  "ImageGlass is a lightweight software designed for seamless viewing of images in a clean and intuitive interface. With support for over 80 common image formats including WEBP, GIF, SVG, PNG, JXL, HEIC,...",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Pinta 3.1.2",
+                         "Id":  "Pinta.Pinta",
+                         "Desc":  "Simple GTK# Paint Program",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Claude",
+                         "Id":  "Anthropic.Claude",
+                         "Desc":  "Your AI partner on desktop. Fast, focused, and designed for deep work.",
+                         "Category":  "KI-Tools"
+                     },
+                     {
+                         "Name":  "DirectX",
+                         "Id":  "Microsoft.DirectX",
+                         "Desc":  "Installieren eine Reihe von Laufzeitbibliotheken aus dem Legacy-DirectX SDK für einige Spiele, die D3DX9, D3DX10, D3DX11, XAudio 2.7, XInput 1.3, XACT und/oder Managed DirectX 1.1 verwenden.",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2015 UWP Runtime Package",
+                         "Id":  "Microsoft.VCLibs.14",
+                         "Desc":  "C++ Runtime framework packages.",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.5",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.5",
+                         "Desc":  "Microsoft Windows App Runtime 1.5",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.6",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.6",
+                         "Desc":  "Microsoft Windows App Runtime 1.6",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.7",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.7",
+                         "Desc":  "Microsoft Windows App Runtime 1.7",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.8",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.8",
+                         "Desc":  "Microsoft Windows App Runtime 1.8",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "TeamViewer",
+                         "Id":  "TeamViewer.TeamViewer",
+                         "Desc":  "TeamViewer ist eine umfassende Lösung für Fernzugriff, Fernsteuerung und Fernsupport, die mit fast jeder Desktop- und Mobilplattform funktioniert, einschließlich Windows, macOS, Android und iOS.\r\n  Mi...",
+                         "Category":  "Netzwerk \u0026 Server"
+                     },
+                     {
+                         "Name":  "1Password",
+                         "Id":  "AgileBits.1Password",
+                         "Desc":  "Protect your sensitive information with our password manager. Stop data breaches, secure apps, and autofill passwords with 1Password.",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Bullzip PDF Printer 2026.0.0.2993",
+                         "Id":  "Bullzip.PDFPrinter",
+                         "Desc":  "The Bullzip PDF Printer works as a Microsoft Windows printer and allows you to write PDF documents from virtually any Microsoft Windows application.",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "calibre 64bit",
+                         "Id":  "calibre.calibre",
+                         "Desc":  "calibre is an e-book manager. It can view, convert, edit and catalog e-books in all of the major e-book formats. It can also talk to e-book reader devices. It can go out to the internet and fetch meta...",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "DeepL",
+                         "Id":  "DeepL.DeepL",
+                         "Desc":  "DeepL Translate is the go-to translation tool for fast, accurate, and high-quality translations.\r\n  Millions of people use it every day to translate between 26 languages, improve their communication, ...",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Joplin 3.6.13",
+                         "Id":  "Joplin.Joplin",
+                         "Desc":  "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either ...",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Notepad++ (64-bit x64)",
+                         "Id":  "Notepad++.Notepad++",
+                         "Desc":  "Notepad++ is a free (as in “free speech” and also as in “free beer”) source code editor and Notepad replacement that supports several languages.\r\n  Running in the MS Windows environment, its use is go...",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "ONLYOFFICE 9.3.1 (x64)",
+                         "Id":  "ONLYOFFICE.DesktopEditors",
+                         "Desc":  "Create, view and edit text documents, spreadsheets and presentations of any size and complexity.\r\n  Work on documents of most popular formats; DOCX, ODT, XLSX, ODS, CSV, PPTX, ODP, etc.\r\n  Deal with m...",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Typora",
+                         "Id":  "appmakes.Typora",
+                         "Desc":  "Typora is a cross-platform minimal markdown editor, providing seamless experience for both markdown readers and writers.",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "AdGuard",
+                         "Id":  "AdGuard.AdGuard",
+                         "Desc":  "AdGuard is a unique desktop program that has all the necessary features for the best web experience.\r\n  The software combines the world\u0027s most advanced ad blocker for Windows, a whole privacy protecti...",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "ESET Security",
+                         "Id":  "ESET.Nod32",
+                         "Desc":  "ESET NOD32 Antivirus represents a new approach to truly integrated computer security. The most recent version of the ESET LiveGrid® scanning engine utilizes speed and precision to keep your computer s...",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "NordVPN",
+                         "Id":  "NordSecurity.NordVPN",
+                         "Desc":  "NordVPN encrypts your internet traffic and hides your IP and physical location. Works on 6 devices at once, on every major platform. With NordVPN, encrypt your online activity to protect your private ...",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "proCertum SmartSign SimplySign Desktop",
+                         "Id":  "Certum.SmartSignSimplySignDesktop",
+                         "Desc":  "The proCertum SmartSign software is an app used to create and verify a secure electronic signature verified with a valid qualified certificate. The app allows management of electronic documents, their...",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "7-Zip 26.01 (x64)",
+                         "Id":  "7zip.7zip",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Everything 1.4.1.1032 (x64)",
+                         "Id":  "voidtools.Everything",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "EXPERTool v11.13",
+                         "Id":  "Gainward.EXPERTool",
+                         "Desc":  "Tuning utility for customized performance enhancements and efficient desktop management.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "HWiNFO® 64",
+                         "Id":  "REALiX.HWiNFO",
+                         "Desc":  "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "LanguageTool for Desktop",
+                         "Id":  "Learneo.LanguageTool",
+                         "Desc":  "LanguageTool checks texts for spelling and grammar errors in over thirty languages, enhances your writing with intelligent style suggestions, and supports integration with all of your favorite Windows...",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Snagit",
+                         "Id":  "TechSmith.Snagit.2026",
+                         "Desc":  "Snagit helps you quickly share information in a way that\u0027s easy to understand. Capture your screen and camera, add additional context and move work forward faster.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Stardock Fences 6",
+                         "Id":  "StardockSystems.Fences6",
+                         "Desc":  "Fences® 6 Setup Application",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "TreeSize Free V4.8.1",
+                         "Id":  "JAMSoftware.TreeSize.Free",
+                         "Desc":  "Every hard disk is too small if you just wait long enough.\r\n  TreeSize Free tells you where precious disk space has gone.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Windows-Terminal",
+                         "Id":  "Microsoft.WindowsTerminal",
+                         "Desc":  "The new Windows Terminal, a tabbed command line experience for Windows.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "WinRAR 7.22 (64-Bit)",
+                         "Id":  "RARLab.WinRAR",
+                         "Desc":  "- WinRAR ist ein leistungsfähiges Packprogramm mit vielen integrierten zusätzlichen Funktionen, welches Ihnen bei der Organisation Ihrer komprimierten Archive behilflich ist.\r\n  - WinRAR setzt sich vo...",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Corsair iCUE5 Software",
+                         "Id":  "Corsair.iCUE.5",
+                         "Desc":  "iCUE’s single intuitive interface links together supported CORSAIR products, allowing you to quickly and easily fine-tune your settings.\r\n  Supported CORSAIR keyboards and mice are fully programmable ...",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "NVIDIA PhysX-Systemsoftware 9.23.1019",
+                         "Id":  "Nvidia.PhysX",
+                         "Desc":  "PhysX System software provides updates necessary for some games to run PhysX content properly",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "8GadgetPack",
+                         "Id":  "HelmutBuhler.8GadgetPack",
+                         "Desc":  "8GadgetPack makes it possible to use gadgets on Windows 11 / 10 / 8.1 / 7.",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "AIDA64 Extreme v8.30 (64 Bit)",
+                         "Id":  "FinalWire.AIDA64.Extreme",
+                         "Desc":  "AIDA64 Extreme has a hardware detection engine unrivaled in its class. It provides detailed information about installed software and offers diagnostic functions and support for overclocking. As it is ...",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "App-Installer",
+                         "Id":  "Microsoft.AppInstaller",
+                         "Desc":  "Microsoft App Installer simplifies the installation of Windows applications by allowing users to sideload app packages with a double-click—no need to run PowerShell scripts or command-line tools. It p...",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2015 UWP Desktop Runtim…",
+                         "Id":  "Microsoft.VCLibs.Desktop.14",
+                         "Desc":  "C++ Runtime framework packages for Desktop Bridge.",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Microsoft.UI.Xaml.2.8",
+                         "Id":  "Microsoft.UI.Xaml.2.8",
+                         "Desc":  "Windows UI Library: the latest Windows 10 native controls and Fluent styles for your applications",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "RGB Fusion",
+                         "Id":  "GIGABYTE.RGBFusion",
+                         "Desc":  "With an integrated intuitive user interface, the RGB Fusion 2.0 provides you a better solution for customizing the lighting effects across all supported devices. From motherboards, graphics cards to t...",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Stardock Start11",
+                         "Id":  "Stardock.Start11.v2",
+                         "Desc":  "Customize the Start Menu and Taskbar in Windows 10/11",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Windhawk v1.7.3",
+                         "Id":  "RamenSoftware.Windhawk",
+                         "Desc":  "The customization marketplace for Windows programs. Customize your programs with available code snippets or create your own customizations.",
+                         "Category":  "Sonstige Programme"
+                     }
+                 ],
+    "DirectLinks":  [
+                        {
+                            "Name":  "AMD Chipsatztreiber",
+                            "Id":  "URL:https://www.amd.com/de/support/download/drivers.html",
+                            "Desc":  "Aktuelle AMD Chipsatztreiber - oeffnet AMD Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Armoury Crate (RTX 4090)",
+                            "Id":  "URL:https://armoury-crate.com/",
+                            "Desc":  "ASUS Armoury Crate fuer RTX 4090 - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Disk Space Explorer",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/disk-space-explorer-2023",
+                            "Desc":  "Kostenlose Festplattenanalyse - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Photo Commander 18",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/photo-commander-18",
+                            "Desc":  "Foto-Verwaltung und Bearbeitung (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Privacy Inspector",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/privacy-inspector-3",
+                            "Desc":  "Datenschutz-Analyse fuer Windows (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo Uninstaller 16",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/uninstaller-16",
+                            "Desc":  "Vollstaendige Software-Deinstallation (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Ashampoo WinOptimizer 28",
+                            "Id":  "URL:https://www.ashampoo.com/en-us/winoptimizer",
+                            "Desc":  "System-Optimierung fuer Windows (Trial) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Brother MFC-L3770CDW Treiber",
+                            "Id":  "URL:https://www.brother.de/support/mfc-l3770cdw/downloads",
+                            "Desc":  "Komplettes Treiberbundle - oeffnet Brother Support-Seite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Creative App (Katana V2X)",
+                            "Id":  "URL:https://support.creative.com/Products/ProductDetails.aspx?catID=1264\u0026subCatID=1268\u0026prodID=23937",
+                            "Desc":  "Creative App fuer Soundblaster Katana V2X - oeffnet Supportseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Google App fuer Windows",
+                            "Id":  "URL:https://dl.google.com/googleapp/windows/stable/GoogleAppSetup.exe",
+                            "Desc":  "KI-Suche, Google Lens und Bildschirmsuche fuer Windows - startet Direktdownload",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Infomaniak kDrive",
+                            "Id":  "URL:https://www.infomaniak.com/drive/latest",
+                            "Desc":  "Schweizer Cloud-Sync-Client - startet Direktdownload",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "NVIDIA App",
+                            "Id":  "URL:https://www.nvidia.com/de-de/software/nvidia-app/",
+                            "Desc":  "NVIDIA Treiber und Optimierung (nicht in winget) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "RemoteRelay",
+                            "Id":  "URL:https://getremoterelay.com/?locale=de",
+                            "Desc":  "Wake-on-LAN und Remote-Steuerung - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        },
+                        {
+                            "Name":  "Winstep Nexus Ultimate",
+                            "Id":  "URL:https://www.winstep.net/nexus.asp",
+                            "Desc":  "Animiertes Dock fuer Windows (Ultimate-Version) - oeffnet Downloadseite",
+                            "Category":  "Direktdownload"
+                        }
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "TechSmith.Snagit.2026":  "System \u0026 Tools"
+                          }
+}

@@ -1,0 +1,442 @@
+﻿{
+    "Version":  "1.7.0.1",
+    "ExportDate":  "2026-05-10 22:10:56",
+    "ExportMode":  "full",
+    "Programs":  [
+                     {
+                         "Name":  "mpv.net version 7.1.2.0",
+                         "Id":  "mpv.net",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Audio \u0026 Video"
+                     },
+                     {
+                         "Name":  "Brave",
+                         "Id":  "Brave.Brave",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Google Chrome",
+                         "Id":  "Google.Chrome.EXE",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Mozilla Firefox (x64 de)",
+                         "Id":  "Mozilla.Firefox.de",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "PWAsForFirefox",
+                         "Id":  "filips.FirefoxPWA",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Mozilla Thunderbird (x64 de)",
+                         "Id":  "Mozilla.Thunderbird.de",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "E-Mail \u0026 Kalender"
+                     },
+                     {
+                         "Name":  "GitHub Desktop",
+                         "Id":  "GitHub.GitHubDesktop",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft .Net Native Runtime Package 2.2",
+                         "Id":  "Microsoft.DotNet.Native.Runtime",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2008 Redistributable - …",
+                         "Id":  "Microsoft.VCRedist.2008.x86",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2010  x64 Redistributab…",
+                         "Id":  "Microsoft.VCRedist.2010.x64",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2010  x86 Redistributab…",
+                         "Id":  "Microsoft.VCRedist.2010.x86",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2012 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2012.x64",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2012 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2012.x86",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2013 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2013.x86",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2013 Redistributable (x…",
+                         "Id":  "Microsoft.VCRedist.2013.x64",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ v14 Redistributable (x6…",
+                         "Id":  "Microsoft.VCRedist.2015+.x64",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ v14 Redistributable (x8…",
+                         "Id":  "Microsoft.VCRedist.2015+.x86",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime - 6.0.36 (…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.6",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime - 8.0.26 (…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.8",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime - 9.0.15 (…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.9",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Microsoft Windows Desktop Runtime 10.0.7 (x6…",
+                         "Id":  "Microsoft.DotNet.DesktopRuntime.10",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Epic Games Launcher",
+                         "Id":  "EpicGames.EpicGamesLauncher",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "GOG GALAXY",
+                         "Id":  "GOG.Galaxy",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Playnite",
+                         "Id":  "Playnite.Playnite",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Steam",
+                         "Id":  "Valve.Steam",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Ubisoft Connect",
+                         "Id":  "Ubisoft.Connect",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Vortex",
+                         "Id":  "NexusMods.Vortex",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Affinity",
+                         "Id":  "Canva.Affinity",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Canva",
+                         "Id":  "Canva.Canva",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "ente 1.7.23",
+                         "Id":  "ente-io.photos-desktop",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "ImageGlass",
+                         "Id":  "DuongDieuPhap.ImageGlass",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Pinta 3.1.2",
+                         "Id":  "Pinta.Pinta",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Grafik \u0026 Design"
+                     },
+                     {
+                         "Name":  "Claude",
+                         "Id":  "Anthropic.Claude",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "KI-Tools"
+                     },
+                     {
+                         "Name":  "DirectX",
+                         "Id":  "Microsoft.DirectX",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2015 UWP Runtime Package",
+                         "Id":  "Microsoft.VCLibs.14",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.5",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.5",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.6",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.6",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.7",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.7",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "WindowsAppRuntime.1.8",
+                         "Id":  "Microsoft.WindowsAppRuntime.1.8",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Laufzeiten \u0026 Frameworks"
+                     },
+                     {
+                         "Name":  "TeamViewer",
+                         "Id":  "TeamViewer.TeamViewer",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Netzwerk \u0026 Server"
+                     },
+                     {
+                         "Name":  "1Password",
+                         "Id":  "AgileBits.1Password",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Bullzip PDF Printer 2026.0.0.2993",
+                         "Id":  "Bullzip.PDFPrinter",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "calibre 64bit",
+                         "Id":  "calibre.calibre",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "DeepL",
+                         "Id":  "DeepL.DeepL",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Joplin 3.6.11",
+                         "Id":  "Joplin.Joplin",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Notepad++ (64-bit x64)",
+                         "Id":  "Notepad++.Notepad++",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "ONLYOFFICE 9.3.1 (x64)",
+                         "Id":  "ONLYOFFICE.DesktopEditors",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Typora",
+                         "Id":  "appmakes.Typora",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Office \u0026 Produktivitaet"
+                     },
+                     {
+                         "Name":  "Snagit",
+                         "Id":  "TechSmith.Snagit.2026",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Screenshot-Tools"
+                     },
+                     {
+                         "Name":  "AdGuard",
+                         "Id":  "AdGuard.AdGuard",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "ESET Security",
+                         "Id":  "ESET.Nod32",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "NordVPN",
+                         "Id":  "NordSecurity.NordVPN",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "proCertum SmartSign SimplySign Desktop",
+                         "Id":  "Certum.SmartSignSimplySignDesktop",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "Everything 1.4.1.1032 (x64)",
+                         "Id":  "voidtools.Everything",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "EXPERTool v11.13",
+                         "Id":  "Gainward.EXPERTool",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "HWiNFO® 64",
+                         "Id":  "REALiX.HWiNFO",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "LanguageTool for Desktop",
+                         "Id":  "Learneo.LanguageTool",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Stardock Fences 6",
+                         "Id":  "StardockSystems.Fences6",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "TreeSize Free V4.8.1",
+                         "Id":  "JAMSoftware.TreeSize.Free",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Windows-Terminal",
+                         "Id":  "Microsoft.WindowsTerminal",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "WinRAR 7.22 (64-Bit)",
+                         "Id":  "RARLab.WinRAR",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Corsair iCUE5 Software",
+                         "Id":  "Corsair.iCUE.5",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "NVIDIA PhysX-Systemsoftware 9.23.1019",
+                         "Id":  "Nvidia.PhysX",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Treiber \u0026 Hardware"
+                     },
+                     {
+                         "Name":  "8GadgetPack",
+                         "Id":  "HelmutBuhler.8GadgetPack",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "AIDA64 Extreme v8.30 (64 Bit)",
+                         "Id":  "FinalWire.AIDA64.Extreme",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "App-Installer",
+                         "Id":  "Microsoft.AppInstaller",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Microsoft Visual C++ 2015 UWP Desktop Runtim…",
+                         "Id":  "Microsoft.VCLibs.Desktop.14",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Microsoft.UI.Xaml.2.8",
+                         "Id":  "Microsoft.UI.Xaml.2.8",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "RGB Fusion",
+                         "Id":  "GIGABYTE.RGBFusion",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Stardock Start11",
+                         "Id":  "Stardock.Start11.v2",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     },
+                     {
+                         "Name":  "Windhawk v1.7.3",
+                         "Id":  "RamenSoftware.Windhawk",
+                         "Desc":  "Auf diesem System installiert",
+                         "Category":  "Sonstige Programme"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+                             "Screenshot-Tools"
+                         ],
+    "CustomAssignments":  {
+                              "TechSmith.Snagit.2026":  "Screenshot-Tools"
+                          }
+}

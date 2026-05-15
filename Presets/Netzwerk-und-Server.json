@@ -1,0 +1,28 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 02:24:18",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Remote Desktop Mgr",
+                         "Id":  "Devolutions.RemoteDesktopManager",
+                         "Desc":  "Verschoben vom Benutzer",
+                         "Category":  "Netzwerk \u0026 Server"
+                     },
+                     {
+                         "Name":  "TeamViewer",
+                         "Id":  "TeamViewer.TeamViewer",
+                         "Desc":  "Fernzugriff und Remote-Support",
+                         "Category":  "Netzwerk \u0026 Server"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "Devolutions.RemoteDesktopManager":  "Netzwerk \u0026 Server"
+                          }
+}

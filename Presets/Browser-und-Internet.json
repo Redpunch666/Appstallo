@@ -1,0 +1,46 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 01:57:44",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Brave",
+                         "Id":  "Brave.Brave",
+                         "Desc":  "Datenschutzorientierter Chromium-Browser",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Firefox (DE)",
+                         "Id":  "Mozilla.Firefox.de",
+                         "Desc":  "Mozillas Open-Source-Webbrowser (Deutsch)",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Google Chrome",
+                         "Id":  "Google.Chrome.EXE",
+                         "Desc":  "Googles weit verbreiteter Webbrowser",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Opera",
+                         "Id":  "Opera.Opera",
+                         "Desc":  "Browser mit integriertem VPN und Werbeblocker",
+                         "Category":  "Browser \u0026 Internet"
+                     },
+                     {
+                         "Name":  "Vivaldi",
+                         "Id":  "Vivaldi.Vivaldi",
+                         "Desc":  "Hochgradig anpassbarer Browser",
+                         "Category":  "Browser \u0026 Internet"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+
+                          }
+}

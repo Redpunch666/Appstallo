@@ -1,0 +1,28 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 02:00:26",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Discord",
+                         "Id":  "Discord.Discord",
+                         "Desc":  "Voice-, Video- und Text-Chat-Plattform",
+                         "Category":  "Kommunikation"
+                     },
+                     {
+                         "Name":  "WhatsApp",
+                         "Id":  "9NKSQGP7F2NH",
+                         "Desc":  "WhatsApp Messenger fuer Windows (Microsoft Store)",
+                         "Category":  "Kommunikation"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+
+                          }
+}

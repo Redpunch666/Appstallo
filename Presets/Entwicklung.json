@@ -1,0 +1,35 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 02:21:18",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "GitHub Desktop",
+                         "Id":  "GitHub.GitHubDesktop",
+                         "Desc":  "GitHub Desktop is an open-source Electron-based GitHub app. It is written in TypeScript and uses React.",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Notepad++",
+                         "Id":  "Notepad++.Notepad++",
+                         "Desc":  "Notepad++ is a free (as in “free speech” and also as in “free beer”) source code editor and Notepad replacement that supports several languages.\r\n  Running in the MS Windows environment, its use is go...",
+                         "Category":  "Entwicklung"
+                     },
+                     {
+                         "Name":  "Windows-Terminal",
+                         "Id":  "Microsoft.WindowsTerminal",
+                         "Desc":  "The new Windows Terminal, a tabbed command line experience for Windows.",
+                         "Category":  "Entwicklung"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "Notepad++.Notepad++":  "Entwicklung",
+                              "Microsoft.WindowsTerminal":  "Entwicklung"
+                          }
+}

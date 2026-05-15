@@ -1,0 +1,3 @@
+@echo off
+echo Starte Build...
+powershell.exe -NoExit -ExecutionPolicy Bypass -File "%~dp0Build-Executables.ps1"

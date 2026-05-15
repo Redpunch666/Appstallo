@@ -1,0 +1,117 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 02:03:54",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "7-Zip",
+                         "Id":  "7zip.7zip",
+                         "Desc":  "Kostenloser Datei-Archiver (ZIP, RAR, 7z u.v.m.)",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "AIDA64 Extreme",
+                         "Id":  "FinalWire.AIDA64.Extreme",
+                         "Desc":  "AIDA64 Extreme has a hardware detection engine unrivaled in its class. It provides detailed information about installed software and offers diagnostic functions and support for overclocking. As it is ...",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "AquaSnap",
+                         "Id":  "NurgoSoftware.AquaSnap",
+                         "Desc":  "Fenster-Snapping und Desktop-Organisation",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Everything",
+                         "Id":  "voidtools.Everything",
+                         "Desc":  "Blitzschnelle Dateisuche fuer Windows (stabil)",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Fences 6",
+                         "Id":  "StardockSystems.Fences6",
+                         "Desc":  "Desktop-Organizer fuer Icons und Verknuepfungen",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "HWiNFO64",
+                         "Id":  "REALiX.HWiNFO",
+                         "Desc":  "Hardware-Monitoring und Sensor-Diagnose",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "IObit Unlocker",
+                         "Id":  "IObit.IObitUnlocker",
+                         "Desc":  "Gesperrte Dateien und Ordner entsperren",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "PowerToys",
+                         "Id":  "Microsoft.PowerToys",
+                         "Desc":  "Microsoft-Utilitys: FancyZones, PowerRename u.v.m.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Snagit 2026",
+                         "Id":  "TechSmith.Snagit.2026",
+                         "Desc":  "Professionelles Screenshot- und Screencasting-Tool",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Start11 v2",
+                         "Id":  "Stardock.Start11.v2",
+                         "Desc":  "Customize the Start Menu and Taskbar in Windows 10/11",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "TreeSize Free",
+                         "Id":  "JAMSoftware.TreeSize.Free",
+                         "Desc":  "Festplattennutzung visualisieren und analysieren",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Winaero Tweaker",
+                         "Id":  "winaero.tweaker",
+                         "Desc":  "Windows-Anpassungen und erweiterte Einstellungen",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Windhawk",
+                         "Id":  "RamenSoftware.Windhawk",
+                         "Desc":  "The customization marketplace for Windows programs. Customize your programs with available code snippets or create your own customizations.",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "Windows-Terminal",
+                         "Id":  "Microsoft.WindowsTerminal",
+                         "Desc":  "Modernes Terminal mit Tabs und Themes",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "WinRAR",
+                         "Id":  "RARLab.WinRAR",
+                         "Desc":  "RAR- und ZIP-Archivierungsprogramm",
+                         "Category":  "System \u0026 Tools"
+                     },
+                     {
+                         "Name":  "XYplorer",
+                         "Id":  "CologneCodeCompany.XYplorer",
+                         "Desc":  "Leistungsstarker Datei-Manager mit Tabs",
+                         "Category":  "System \u0026 Tools"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "TechSmith.Snagit.2026":  "System \u0026 Tools",
+                              "NurgoSoftware.AquaSnap":  "System \u0026 Tools",
+                              "CologneCodeCompany.XYplorer":  "System \u0026 Tools",
+                              "FinalWire.AIDA64.Extreme":  "System \u0026 Tools",
+                              "RamenSoftware.Windhawk":  "System \u0026 Tools",
+                              "Stardock.Start11.v2":  "System \u0026 Tools"
+                          }
+}

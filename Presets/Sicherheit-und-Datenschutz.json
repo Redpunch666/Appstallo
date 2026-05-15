@@ -1,0 +1,52 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 02:03:17",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "1Password",
+                         "Id":  "AgileBits.1Password",
+                         "Desc":  "Protect your sensitive information with our password manager. Stop data breaches, secure apps, and autofill passwords with 1Password.",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "AdGuard",
+                         "Id":  "AdGuard.AdGuard",
+                         "Desc":  "Werbeblocker und Datenschutz-Tool fuer Windows",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "Cryptomator",
+                         "Id":  "Cryptomator.Cryptomator",
+                         "Desc":  "Client-seitige Verschluesselung fuer Cloud-Speicher",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "ESET Security",
+                         "Id":  "ESET.Nod32",
+                         "Desc":  "Antivirus und Internet Security Suite",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "Malwarebytes",
+                         "Id":  "Malwarebytes.Malwarebytes",
+                         "Desc":  "Anti-Malware und Ransomware-Schutz",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     },
+                     {
+                         "Name":  "NordVPN",
+                         "Id":  "NordSecurity.NordVPN",
+                         "Desc":  "VPN-Dienst fuer Datenschutz und Sicherheit",
+                         "Category":  "Sicherheit \u0026 Datenschutz"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+                              "AgileBits.1Password":  "Sicherheit \u0026 Datenschutz"
+                          }
+}

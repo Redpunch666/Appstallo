@@ -1,0 +1,28 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 01:58:28",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "eM Client",
+                         "Id":  "eMClient.eMClient",
+                         "Desc":  "E-Mail-, Kalender- und Kontaktverwaltung",
+                         "Category":  "E-Mail \u0026 Kalender"
+                     },
+                     {
+                         "Name":  "Thunderbird (DE)",
+                         "Id":  "Mozilla.Thunderbird.de",
+                         "Desc":  "E-Mail- und Kalender-Client von Mozilla (Deutsch)",
+                         "Category":  "E-Mail \u0026 Kalender"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+
+                          }
+}

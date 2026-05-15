@@ -1,0 +1,64 @@
+﻿{
+    "Version":  "1.8.5 RC2",
+    "ExportDate":  "2026-05-14 01:59:14",
+    "ExportMode":  "selection",
+    "Programs":  [
+                     {
+                         "Name":  "Battle.net",
+                         "Id":  "Blizzard.BattleNet",
+                         "Desc":  "Blizzards Spieleplattform fuer WoW, Diablo u.v.m.",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "EA Desktop",
+                         "Id":  "ElectronicArts.EADesktop",
+                         "Desc":  "EA-Spieleplattform (ehemals Origin)",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Epic Games",
+                         "Id":  "EpicGames.EpicGamesLauncher",
+                         "Desc":  "Epic Games Spieleplattform und Store",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "GOG GALAXY",
+                         "Id":  "GOG.Galaxy",
+                         "Desc":  "Spieleplattform fuer DRM-freie Spiele",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Playnite",
+                         "Id":  "Playnite.Playnite",
+                         "Desc":  "Universelle Spielebibliothek fuer alle Plattformen",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Steam",
+                         "Id":  "Valve.Steam",
+                         "Desc":  "Groesste PC-Spieleplattform von Valve",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Ubisoft Connect",
+                         "Id":  "Ubisoft.Connect",
+                         "Desc":  "Ubisofts Spieleplattform und Launcher",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     },
+                     {
+                         "Name":  "Vortex",
+                         "Id":  "NexusMods.Vortex",
+                         "Desc":  "Mod-Manager fuer hunderte PC-Spiele",
+                         "Category":  "Gaming \u0026 Plattformen"
+                     }
+                 ],
+    "DirectLinks":  [
+
+                    ],
+    "CustomCategories":  [
+
+                         ],
+    "CustomAssignments":  {
+
+                          }
+}
