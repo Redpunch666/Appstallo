@@ -1,7 +1,6 @@
 ﻿
 Add-Type -AssemblyName PresentationFramework, PresentationCore, WindowsBase
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
 # AppUserModelID
 try {
     Add-Type -TypeDefinition @"
@@ -1445,7 +1444,7 @@ public static class IconExtractor {
         $ps.Runspace = $rs
         [void]$ps.AddScript({
             try {
-                [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+                try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                 $psi = New-Object System.Diagnostics.ProcessStartInfo
                 $psi.FileName               = "winget"
                 $psi.Arguments              = "search `"$query`" --accept-source-agreements"
@@ -1843,7 +1842,7 @@ public static class IconExtractor {
         $ps = [System.Management.Automation.PowerShell]::Create()
         $ps.Runspace = $rs
         [void]$ps.AddScript({
-            [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+            try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
             $total = $selected.Count
             $num   = 0
             foreach ($entry in $selected) {
@@ -1861,6 +1860,7 @@ public static class IconExtractor {
                 $ok = $false; $fail = $false
                 & winget install --id $pkgId --exact --silent --force --accept-source-agreements --accept-package-agreements 2>&1 | ForEach-Object {
                     $str = $_.ToString().Trim()
+                    $str = $str -replace 'Ã¼','ue' -replace 'Ã¶','oe' -replace 'Ã¤','ae' -replace 'ÃŸ','ss' -replace 'Ãœ','Ue' -replace 'Ã–','Oe' -replace 'Ã„','Ae'
                     if ($str -eq "") { return }
                     if ($str.Length -le 2 -and ($str -eq '-' -or $str -eq '\' -or $str -eq '|' -or $str -eq '/')) { return }
                     if ($str -match "^(\d+)%$") {
@@ -1872,7 +1872,7 @@ public static class IconExtractor {
                         }
                         return
                     }
-                    if ($str -match "[\u2580-\u259F\u2588]") {
+                    if ($str -match "[\u2580-\u259F\u2588]" -or $str -match "\u00E2[\u2010-\u203A\u02C6-\u02DC\u0161\u017E\u0192\u2122]") {
                         if ($str -match "(\d+)%") {
                             $pct = [int]$Matches[1]
                             $sync.PkgProgress = $pct

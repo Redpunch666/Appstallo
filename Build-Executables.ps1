@@ -1,10 +1,12 @@
 ﻿# ============================================================
 #  Build-Executables.ps1  -  Build.bat doppelklicken!
-#  Version: 2025-01-GLASS-A-RESOURCE-META
+#  Version: 2026-05-INPROC-HOST
 #
-#  Appstallo.ps1 wird als eingebettete .NET-Ressource in die
-#  EXE kompiliert - kein Base64, kein AV-Alarm.
-#  Metadaten: Sven Kuhlow
+#  Neuer Ansatz gegen das weisse Taskleisten-Icon:
+#  Die EXE startet NICHT mehr powershell.exe als Unterprozess,
+#  sondern fuehrt das eingebettete Appstallo.ps1 direkt ueber
+#  System.Management.Automation im eigenen EXE-Prozess aus.
+#  Dadurch bleibt der sichtbare Host-Prozess immer Appstallo.exe.
 # ============================================================
 
 $logFile = "$env:USERPROFILE\WingetBuild.log"
@@ -95,8 +97,10 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Security.Principal;
 using System.Reflection;
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
+using System.Threading;
 
-// ── Metadaten (sichtbar unter Eigenschaften -> Details) ──────────────────────
 [assembly: AssemblyTitle("Appstallo")]
 [assembly: AssemblyDescription("Winget Package Manager Suite - Updater, Installer, Uninstaller")]
 [assembly: AssemblyCompany("Sven Kuhlow")]
@@ -113,66 +117,74 @@ class AppstalloApp {
         return new WindowsPrincipal(id).IsInRole(WindowsBuiltInRole.Administrator);
     }
 
+    static string ReadEmbeddedScript() {
+        var asm = Assembly.GetExecutingAssembly();
+        using (var stream = asm.GetManifestResourceStream("AppstalloEmbed.ps1")) {
+            if (stream == null) return null;
+            using (var reader = new StreamReader(stream, true)) {
+                return reader.ReadToEnd();
+            }
+        }
+    }
+
     [STAThread]
     static void Main(string[] cliArgs) {
-
         string moduleArg = (cliArgs != null && cliArgs.Length > 0) ? cliArgs[0] : "";
 
         if (!IsAdmin()) {
             try {
-                var self = new ProcessStartInfo(
-                    Assembly.GetExecutingAssembly().Location);
-                self.Arguments       = moduleArg;
-                self.Verb            = "runas";
+                var self = new ProcessStartInfo(Assembly.GetExecutingAssembly().Location);
+                self.Arguments = moduleArg;
+                self.Verb = "runas";
                 self.UseShellExecute = true;
                 Process.Start(self);
             } catch (Exception) { }
             return;
         }
 
-        string tmp = null;
         try {
-            var asm    = Assembly.GetExecutingAssembly();
-            var stream = asm.GetManifestResourceStream("AppstalloEmbed.ps1");
-
-            if (stream == null) {
-                MessageBox.Show(
-                    "Interne Ressource nicht gefunden.",
-                    "Appstallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            string scriptText = ReadEmbeddedScript();
+            if (String.IsNullOrEmpty(scriptText)) {
+                MessageBox.Show("Interne Ressource nicht gefunden.", "Appstallo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            tmp = Path.Combine(Path.GetTempPath(),
-                "Appstallo_" + Guid.NewGuid().ToString("N") + ".ps1");
+            string exePath = Assembly.GetExecutingAssembly().Location;
+            string exeDir = Path.GetDirectoryName(exePath) ?? Environment.CurrentDirectory;
+            Environment.SetEnvironmentVariable("APPSTALLO_EXE", exePath, EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("APPSTALLO_MODULE", moduleArg ?? "", EnvironmentVariableTarget.Process);
+            Environment.CurrentDirectory = exeDir;
 
-            var bom   = new byte[] { 0xEF, 0xBB, 0xBF };
-            var bytes = new byte[stream.Length];
-            stream.Read(bytes, 0, bytes.Length);
-            stream.Close();
+            var initial = InitialSessionState.CreateDefault();
 
-            bool hasBom = bytes.Length >= 3 &&
-                          bytes[0] == 0xEF && bytes[1] == 0xBB && bytes[2] == 0xBF;
-            using (var fs = new FileStream(tmp, FileMode.Create)) {
-                if (!hasBom) fs.Write(bom, 0, 3);
-                fs.Write(bytes, 0, bytes.Length);
+            using (var runspace = RunspaceFactory.CreateRunspace(initial)) {
+                runspace.ApartmentState = ApartmentState.STA;
+                runspace.ThreadOptions = PSThreadOptions.UseCurrentThread;
+                runspace.Open();
+                runspace.SessionStateProxy.SetVariable("PSScriptRoot", exeDir);
+                runspace.SessionStateProxy.SetVariable("PSCommandPath", Path.Combine(exeDir, "Appstallo.ps1"));
+
+                using (var ps = PowerShell.Create()) {
+                    ps.Runspace = runspace;
+                    ps.AddScript(scriptText, false);
+                    ps.Invoke();
+
+                    if (ps.HadErrors) {
+                        var msg = "";
+                        foreach (var err in ps.Streams.Error) {
+                            if (!String.IsNullOrWhiteSpace(msg)) msg += "\n\n";
+                            msg += err.ToString();
+                        }
+                        if (String.IsNullOrWhiteSpace(msg)) msg = "Unbekannter PowerShell-Fehler.";
+                        MessageBox.Show(msg, "Appstallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-
-            string args = "-WindowStyle Hidden -ExecutionPolicy Bypass -File " +
-                          (char)34 + tmp + (char)34;
-            var psi = new ProcessStartInfo("powershell.exe", args);
-            psi.UseShellExecute = false;
-            psi.EnvironmentVariables["APPSTALLO_EXE"]    = Assembly.GetExecutingAssembly().Location;
-            psi.EnvironmentVariables["APPSTALLO_MODULE"] = moduleArg;
-            psi.CreateNoWindow  = true;
-            Process.Start(psi).WaitForExit();
         }
         catch (Exception ex) {
-            MessageBox.Show("Fehler:\n\n" + ex.Message,
-                "Appstallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-        finally {
-            try { if (tmp != null && File.Exists(tmp)) File.Delete(tmp); }
-            catch { }
+            MessageBox.Show("Fehler:\n\n" + ex.ToString(), "Appstallo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
@@ -188,7 +200,10 @@ class AppstalloApp {
     $params.OutputAssembly     = $out
     $params.CompilerOptions    = "/target:winexe /platform:x64 /win32icon:`"$tmpIco`" /resource:`"$tmpPs1`",AppstalloEmbed.ps1"
     [void]$params.ReferencedAssemblies.Add("System.dll")
+    [void]$params.ReferencedAssemblies.Add("System.Core.dll")
     [void]$params.ReferencedAssemblies.Add("System.Windows.Forms.dll")
+    $smaPath = [System.Reflection.Assembly]::GetAssembly([powershell]).Location
+    [void]$params.ReferencedAssemblies.Add($smaPath)
 
     $results = $provider.CompileAssemblyFromSource($params, $csCode)
 
@@ -208,7 +223,7 @@ class AppstalloApp {
         Log "ERFOLG: Appstallo.exe ($kb KB)" "Green"
         Log "Pfad  : $out" "Gray"
         Log "" ; Log "Metadaten:" "DarkGray"
-        Log "  Produkt   : Appstallo 1.9.0 RC3" "DarkGray"
+        Log "  Produkt   : Appstallo 1.9.0" "DarkGray"
         Log "  Entwickler: Sven Kuhlow" "DarkGray"
         Log "  Copyright : (c) 2026 Sven Kuhlow" "DarkGray"
         Log "" ; Log "EXE ist vollstaendig standalone." "DarkGray"

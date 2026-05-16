@@ -50,7 +50,7 @@ Hinweis: Beim Direktstart ueber PowerShell steht das Appstallo-Icon nicht zur Ve
 
 ## Taskleisten-Verknuepfung einrichten
 
-Seit v1.9.0 RC3 funktioniert das Anpinnen direkt aus der laufenden Anwendung:
+Seit v1.9.0 funktioniert das Anpinnen direkt aus der laufenden Anwendung:
 
 1. Appstallo ueber die EXE starten
 2. Rechtsklick auf das Appstallo-Symbol in der Taskleiste
@@ -486,7 +486,7 @@ das diese in eine ausfuehrbare `.exe` packt.
 
 ### Gemeinsame Funktionen (`Appstallo.Common.ps1`)
 
-Seit v1.9.0 RC3 liegen die zentralen winget-Scanner-Funktionen in einer
+Seit v1.9.0 liegen die zentralen winget-Scanner-Funktionen in einer
 gemeinsamen Datei:
 
 - **`Get-WingetUpdates`** – Liefert verfuegbare Updates als gefilterte Liste.

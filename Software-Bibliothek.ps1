@@ -113,8 +113,7 @@ public static class AppstalloWindowPropStore {
             [AppstalloWindowPropStore]::SetString($Hwnd, $fmt, [uint32]4, $iconRes)
         } catch {}
     }
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole]::Administrator)
 if (-not $isAdmin) {
@@ -2580,7 +2579,7 @@ public static class IconExtractor {
         [void]$ps.AddScript($WGT_InstalledScannerCode)
         [void]$ps.AddScript({
             try {
-                [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+                try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                 $debugLog = "$env:USERPROFILE\Appstallo-ScanDebug.log"
 
                 # === Refactor: zentrale Get-WingetInstalledList ===
@@ -2743,7 +2742,7 @@ public static class IconExtractor {
         $ps.Runspace = $rs
         [void]$ps.AddScript({
             try {
-                [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+                try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                 foreach ($pkg in $pkgList) {
                     $sync.CurrentPkg++
                     $sync.PkgProgress = 0
@@ -2770,6 +2769,7 @@ public static class IconExtractor {
                         --accept-source-agreements --accept-package-agreements --force 2>&1 |
                     ForEach-Object {
                         $str = $_.ToString()
+                        $str = $str -replace 'Ã¼','ue' -replace 'Ã¶','oe' -replace 'Ã¤','ae' -replace 'ÃŸ','ss' -replace 'Ãœ','Ue' -replace 'Ã–','Oe' -replace 'Ã„','Ae'
                         # CR-getrennte Progress-Updates ignorieren - nur den letzten Teil nehmen
                         if ($str -match "[`r`n]") { $str = ($str -split "[`r`n]+")[-1] }
                         $str = $str.Trim()
@@ -2785,7 +2785,7 @@ public static class IconExtractor {
                             return
                         }
                         # winget Block-Progressbar filtern
-                        if ($str -match "[\u2580-\u259F\u2588]") {
+                        if ($str -match "[\u2580-\u259F\u2588]" -or $str -match "\u00E2[\u2010-\u203A\u02C6-\u02DC\u0161\u017E\u0192\u2122]") {
                             if ($str -match "(\d+)%") {
                                 $pct = [int]$Matches[1]
                                 $sync.PkgProgress = $pct
@@ -2841,7 +2841,7 @@ public static class IconExtractor {
         $sync.InstallButton.Visibility   = "Visible"
         $sync.BackButton.Visibility      = "Collapsed"
         
-        # v1.9.0 RC3: Wenn aus Bibo installiert wurde, Rescan und UI-Rebuild ausloesen
+        # v1.9.0: Wenn aus Bibo installiert wurde, Rescan und UI-Rebuild ausloesen
         # damit die soeben installierten Programme als "installiert" angezeigt werden.
         if ($sync.BiboInstallDone) {
             $sync.BiboInstallDone = $false
@@ -2895,7 +2895,7 @@ public static class IconExtractor {
         $psLoader.Runspace = $rsLoader
         [void]$psLoader.AddScript({
             try {
-                [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+                try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                 foreach ($id in $idsToFetch) {
                     try {
                         $psi3 = New-Object System.Diagnostics.ProcessStartInfo
@@ -3074,7 +3074,7 @@ public static class IconExtractor {
         $rs.Open()
         $rs.SessionStateProxy.SetVariable("fetchState", $fetchState)
         $ps = [powershell]::Create().AddScript({
-            [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+            try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
             foreach ($item in $fetchState.Items) {
                 $fetchState.CurrentName = $item.Name
                 try {
@@ -3207,7 +3207,7 @@ tr:hover { background: #f8f8f8; }
             }
             $html += "</table>`n"
         }
-        $html += "<div class='footer'>Gesamt: $totalProgs Programme | $totalInstalled installiert | Appstallo v1.9.0 RC3</div>"
+        $html += "<div class='footer'>Gesamt: $totalProgs Programme | $totalInstalled installiert | Appstallo v1.9.0</div>"
         $html += "</body></html>"
         $tmpHtml = [System.IO.Path]::Combine($env:TEMP, "Appstallo-Liste.html")
         [System.IO.File]::WriteAllText($tmpHtml, $html, [System.Text.Encoding]::UTF8)
@@ -3639,7 +3639,7 @@ tr:hover { background: #f8f8f8; }
                 $assignObj | Add-Member -NotePropertyName $k -NotePropertyValue $sync.CustomAssignments[$k]
             }
             $backup = [PSCustomObject]@{
-                Version     = "1.9.0 RC3"
+                Version     = "1.9.0"
                 ExportDate  = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
                 ExportMode  = "full"
                 Programs          = $allPrograms
@@ -3671,7 +3671,7 @@ tr:hover { background: #f8f8f8; }
                 }
             }
             $backup = [PSCustomObject]@{
-                Version     = "1.9.0 RC3"
+                Version     = "1.9.0"
                 ExportDate  = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
                 ExportMode  = "selection"
                 Programs          = @($selPrograms | Where-Object { $_.Id -notlike "URL:*" })
@@ -4137,7 +4137,7 @@ tr:hover { background: #f8f8f8; }
                 $ps = [System.Management.Automation.PowerShell]::Create()
                 $ps.Runspace = $rs
                 [void]$ps.AddScript({
-                    [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+                    try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                     $total = $pkgList.Count
                     $iSync.Lines.Add("Starte Installation von $total Programm(en)...")
                     $iSync.Lines.Add("")
@@ -4152,6 +4152,7 @@ tr:hover { background: #f8f8f8; }
                         $synthTick = 0
                         & winget install --id $id --exact --silent --force --accept-source-agreements --accept-package-agreements 2>&1 | ForEach-Object {
                             $str = $_.ToString().Trim()
+                            $str = $str -replace 'Ã¼','ue' -replace 'Ã¶','oe' -replace 'Ã¤','ae' -replace 'ÃŸ','ss' -replace 'Ãœ','Ue' -replace 'Ã–','Oe' -replace 'Ã„','Ae'
                             if ($str -eq "" -or ($str.Length -le 2 -and ($str -eq '-' -or $str -eq '\' -or $str -eq '|' -or $str -eq '/'))) { return }
                             if ($str -match "^(\d+)%$") {
                                 $pct = [int]$Matches[1]
@@ -4160,7 +4161,7 @@ tr:hover { background: #f8f8f8; }
                                 $iSync.CurrentPct = $pct
                                 return
                             }
-                            if ($str -match "[\u2580-\u259F\u2588]") {
+                            if ($str -match "[\u2580-\u259F\u2588]" -or $str -match "\u00E2[\u2010-\u203A\u02C6-\u02DC\u0161\u017E\u0192\u2122]") {
                                 if ($str -match "(\d+)%") {
                                     $pct = [int]$Matches[1]
                                     $bar = ('#' * [int]($pct / 5)).PadRight(20, '.')

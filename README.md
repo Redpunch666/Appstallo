@@ -2,9 +2,7 @@
 
 Eine grafische Verwaltungssuite fuer den Windows Package Manager (winget). Durchsuche das winget-Repository nach Programmen, installiere sie direkt und stelle dir individuelle Software-Bibliotheken zusammen, die sich als Presets fuer verschiedene Computer oder Einsatzszenarien exportieren und importieren lassen.
 
-![Version](https://img.shields.io/badge/Version-1.9.0_RC3-orange) ![Windows](https://img.shields.io/badge/Windows-10%2F11-0078d4) ![PowerShell](https://img.shields.io/badge/PowerShell-5.1-blue) ![Signed](https://img.shields.io/badge/Code--Signed-Certum-green)
-
-> ⚠️ **Release Candidate** – diese Version wird als Testversion veroeffentlicht. Feedback zu Fehlern und Auffaelligkeiten ist willkommen, am besten als Issue auf GitHub.
+![Version](https://img.shields.io/badge/Version-1.9.0-brightgreen) ![Windows](https://img.shields.io/badge/Windows-10%2F11-0078d4) ![PowerShell](https://img.shields.io/badge/PowerShell-5.1-blue) ![Signed](https://img.shields.io/badge/Code--Signed-Certum-green)
 
 ---
 

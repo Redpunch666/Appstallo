@@ -112,8 +112,7 @@ public static class AppstalloWindowPropStore {
             [AppstalloWindowPropStore]::SetString($Hwnd, $fmt, [uint32]4, $iconRes)
         } catch {}
     }
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole]::Administrator)
 if (-not $isAdmin) {
@@ -250,7 +249,7 @@ $xaml = @"
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Winget Uninstaller"
+    Title="Uninstaller"
     Width="860" Height="640"
     MinWidth="700" MinHeight="500"
     WindowStartupLocation="CenterScreen"
@@ -383,7 +382,7 @@ $xaml = @"
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="22,0,0,0">
                 <Border Width="4" Height="30" Background="#a93226" Margin="0,0,12,0"/>
                 <StackPanel>
-                    <TextBlock Text="WINGET UNINSTALLER" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                    <TextBlock Text="UNINSTALLER" Foreground="White" FontSize="15" FontWeight="Bold"/>
                     <TextBlock x:Name="StatusText" Foreground="#888888" FontSize="11" Margin="0,3,0,0"
                                Text="Installierte Software wird analysiert..."/>
                 </StackPanel>
@@ -2046,7 +2045,7 @@ public static class IconExtractor {
         $ps.Runspace = $rs
         [void]$ps.AddScript({
             try {
-                [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+                try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                 foreach ($pkg in $pkgList) {
                     $sync.CurrentPkg++
                     $sync.PkgProgress = 0
@@ -2104,6 +2103,7 @@ public static class IconExtractor {
                     & winget uninstall --id $pkg.Id --silent --force --accept-source-agreements 2>&1 |
                     ForEach-Object {
                         $str = $_.ToString()
+                        $str = $str -replace 'Ã¼','ue' -replace 'Ã¶','oe' -replace 'Ã¤','ae' -replace 'ÃŸ','ss' -replace 'Ãœ','Ue' -replace 'Ã–','Oe' -replace 'Ã„','Ae'
                         # CR-getrennte Progress-Updates ignorieren - nur den letzten Teil nehmen
                         if ($str -match "[`r`n]") { $str = ($str -split "[`r`n]+")[-1] }
                         $str = $str.Trim()
@@ -2119,7 +2119,7 @@ public static class IconExtractor {
                             return
                         }
                         # winget Block-Progressbar filtern
-                        if ($str -match "[\u2580-\u259F\u2588]") {
+                        if ($str -match "[\u2580-\u259F\u2588]" -or $str -match "\u00E2[\u2010-\u203A\u02C6-\u02DC\u0161\u017E\u0192\u2122]") {
                             if ($str -match "(\d+)%") {
                                 $pct = [int]$Matches[1]
                                 $sync.PkgProgress = $pct
@@ -2289,5 +2289,5 @@ public static class IconExtractor {
     $_ | Out-File -FilePath $logPath -Encoding UTF8
     [System.Windows.MessageBox]::Show(
         "Unerwarteter Fehler:`n`n$_`n`nDetails in:`n$logPath",
-        "WingetUninstaller - Fehler", "OK", "Error") | Out-Null
+        "Uninstaller - Fehler", "OK", "Error") | Out-Null
 }

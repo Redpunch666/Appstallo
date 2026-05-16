@@ -114,8 +114,7 @@ public static class AppstalloWindowPropStore {
             [AppstalloWindowPropStore]::SetString($Hwnd, $fmt, [uint32]4, $iconRes)
         } catch {}
     }
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
 # ── Admin-Check: bei Bedarf elevated neu starten ─────────────────────────────
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
     [Security.Principal.WindowsBuiltInRole]::Administrator)
@@ -2083,8 +2082,7 @@ public static class IconExtractor {
         [void]$ps.AddScript($WGT_UpdateScannerCode)
         [void]$ps.AddScript({
             try {
-                [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
+                try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch {}
                 # ── Schritt 1: Update-Liste aus Pre-Scan-Selektion uebernehmen ──────────
                 # Kein erneutes winget upgrade noetig – $sync.SelectedIds wurde im
                 # Pre-Scan befuellt und durch die Checkbox-Auswahl gefiltert.
@@ -2157,6 +2155,7 @@ public static class IconExtractor {
                     ForEach-Object {
                         # winget gibt Progress oft mit CR statt LF aus – aufsplitten
                         $rawText = $_.ToString()
+                        $rawText = $rawText -replace 'Ã¼','ue' -replace 'Ã¶','oe' -replace 'Ã¤','ae' -replace 'ÃŸ','ss' -replace 'Ãœ','Ue' -replace 'Ã–','Oe' -replace 'Ã„','Ae'
                         $parts   = $rawText -split "[`r`n]+"
 
                         foreach ($part in $parts) {
@@ -2175,7 +2174,7 @@ public static class IconExtractor {
                                 continue
                             }
                             # winget Block-Progressbar (Unicode Block Elements) → filtern + Prozent extrahieren
-                            if ($str -match "[\u2580-\u259F\u2588]") {
+                            if ($str -match "[\u2580-\u259F\u2588]" -or $str -match "\u00E2[\u2010-\u203A\u02C6-\u02DC\u0161\u017E\u0192\u2122]") {
                                 if ($str -match "(\d+)%") {
                                     $pct = [int]$Matches[1]
                                     $sync.Progress = $pct

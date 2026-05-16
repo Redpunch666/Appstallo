@@ -63,7 +63,7 @@ Einige Virenscanner melden PowerShell-basierte EXEs als potenziell unerwuenscht.
 
 ### Wie hefte ich das Programm an die Taskleiste an?
 
-Appstallo bei laufendem Programm einfach per Rechtsklick auf das Taskleisten-Symbol → **An Taskleiste anheften** auswaehlen. Seit v1.9.0 RC3 wird dabei zuverlaessig das Appstallo-Icon (statt PowerShell- oder Platzhalter-Icon) verwendet.
+Appstallo bei laufendem Programm einfach per Rechtsklick auf das Taskleisten-Symbol → **An Taskleiste anheften** auswaehlen. Seit v1.9.0 wird dabei zuverlaessig das Appstallo-Icon (statt PowerShell- oder Platzhalter-Icon) verwendet.
 
 ### Wo werden Daten gespeichert?
 
@@ -277,7 +277,7 @@ Die Schriftfarben wurden fuer dunkle Hintergruende optimiert. Falls die Lesbarke
 
 ### Wird in der Taskleiste das richtige Icon angezeigt?
 
-Ja. Seit v1.9.0 RC3 setzt Appstallo eine eigene AppUserModelID und ein konsistentes Fenster-Icon, sodass Windows beim Anpinnen das Appstallo-Icon verwendet – nicht mehr das PowerShell-Symbol oder einen weissen Platzhalter. Falls noch ein altes, falsch gepinntes Icon existiert: einfach von der Taskleiste loesen und neu anheften.
+Ja. Seit v1.9.0 setzt Appstallo eine eigene AppUserModelID und ein konsistentes Fenster-Icon, sodass Windows beim Anpinnen das Appstallo-Icon verwendet – nicht mehr das PowerShell-Symbol oder einen weissen Platzhalter. Falls noch ein altes, falsch gepinntes Icon existiert: einfach von der Taskleiste loesen und neu anheften.
 
 ---
 
@@ -319,7 +319,7 @@ In der Standard-Konfiguration ca. 130 kuratierte Icons aus dem [dashboard-icons]
 
 ### Warum erscheint meine Progressive Web App (PWA) nicht in Appstallo?
 
-Seit v1.9.0 RC3 werden PWAs (Progressive Web Apps) in allen Modulen
+Seit v1.9.0 werden PWAs (Progressive Web Apps) in allen Modulen
 ausgeblendet. Der Grund: PWAs sind im Wesentlichen Browser-Verknuepfungen
 und lassen sich nicht ueber `winget` aktualisieren oder zuverlaessig
 deinstallieren. Eine ueber den Browser installierte PWA aktualisiert sich
@@ -357,7 +357,7 @@ installieren."*
 
 ### Warum sieht das Aktualisierungs-Modul manchmal andere Updates als das Launcher-Badge?
 
-Seit v1.9.0 RC3 nicht mehr - beide nutzen jetzt dieselbe zentrale
+Seit v1.9.0 nicht mehr - beide nutzen jetzt dieselbe zentrale
 Erkennungs-Routine (`Get-WingetUpdates`). Falls dir trotzdem eine
 Diskrepanz auffaellt, bitte ein GitHub-Issue eroeffnen.
 
@@ -371,7 +371,7 @@ Windows-Registry auslesen konnte. Das passiert bei:
   ARP-Eintrag ein
 - Sehr alten oder kaputten Installationen
 
-Seit v1.9.0 RC3 werden solche Eintraege automatisch in den Filtern beruecksichtigt.
+Seit v1.9.0 werden solche Eintraege automatisch in den Filtern beruecksichtigt.
 
 ---
 

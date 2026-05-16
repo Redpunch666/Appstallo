@@ -4,34 +4,9 @@ Alle wesentlichen Aenderungen an **Appstallo** werden in dieser Datei dokumentie
 
 ---
 
-## v1.9.0 RC3 – 2026-05-15
+## v1.9.0 – 2026-05-16
 
-> ⚠️ Release Candidate – Dritte Iteration von v1.9.0 mit Fokus auf das korrekte Taskleisten-Icon.
-
-### Behoben
-
-- **Korrektes Appstallo-Icon in der Taskleiste** – Die EXE setzt nun beim Start eine eigene **AppUserModelID** (`Appstallo.WingetSuite`) und der PowerShell-Host-Prozess wird konsistent mit dem eingebetteten Appstallo-Icon versehen. Damit zeigt Windows beim Anpinnen direkt aus dem laufenden Programm das Appstallo-Icon an – das frühere PowerShell-Icon und der weisse Platzhalter treten nicht mehr auf.
-- **Vereinfachtes Anpinnen** – Der bisher empfohlene Umweg über das Startmenü (Windows-Taste → "Appstallo" suchen → Rechtsklick → An Taskleiste anheften) ist nicht mehr nötig. Anpinnen direkt aus der laufenden Anwendung funktioniert jetzt korrekt.
-
-### Doku
-
-- README, GUIDE und FAQ wurden entsprechend gestrafft. Der alte Workaround-Abschnitt zum Taskleisten-Pinning wurde entfernt.
-
----
-
-## v1.9.0 RC2 – 2026-05-15
-
-> ⚠️ Release Candidate – Zweite Iteration von v1.9.0.
-
-### Neu
-
-- **Automatischer Rescan nach Bibliotheks-Installation** – Nach erfolgreichem Klick auf den Zurueck-Button werden die installierten IDs neu eingelesen und die Bibliothek-Ansicht wird komplett neu aufgebaut. Damit erscheinen Programme, die gerade aus einem Preset installiert wurden, sofort als "Installiert" markiert (mit grauer Schrift und Installiert-Badge) statt weiterhin als "Verfuegbar". Verwendet die in v1.9.0 RC1 eingefuehrte zentrale `Get-WingetInstalledList`-Funktion.
-
----
-
-## v1.9.0 RC1 – 2026-05-14
-
-> ⚠️ Release Candidate – Minor-Release mit Architektur-Refactor und erweiterter Behandlung verschiedener Installer-Typen (PWAs, MSIX, Squirrel).
+Minor-Release mit Architektur-Refactor, erweiterter Behandlung verschiedener Installer-Typen (PWAs, MSIX, Squirrel), korrektem Taskleisten-Icon und automatischem Rescan nach Bibliotheks-Installation.
 
 ### Architektur-Refactor
 
@@ -43,6 +18,15 @@ Alle wesentlichen Aenderungen an **Appstallo** werden in dieser Datei dokumentie
 - **Squirrel-Apps werden erkannt** – Wenn `winget upgrade` aufgrund eines Squirrel-typischen Fehlers fehlschlägt (Exit Code 4294967295, "hash does not match", "requires explicit targeting"), prüft Appstallo das `%LOCALAPPDATA%\<AppName>\Update.exe`-Layout. Falls Match: kein „Fehler", sondern ein klarer Skip-Hinweis im Abschluss-Popup: *„App mit eigenem Updater – bitte App neu starten, sie aktualisiert sich automatisch"*.
 - **MSIX/Store-Apps werden nativ behandelt** – Im Uninstaller wird `Remove-AppxPackage` statt `winget uninstall --silent` verwendet, was die Deinstallation von Apps wie Claude, iLovePDF oder WhatsApp zuverlässig macht. Im Updater erscheint ein klarer Hinweis im Abschluss-Popup mit Verweis auf den Microsoft Store: *„Store > Bibliothek > Updates abrufen"*.
 - **Härterer Erfolgs-Check beim Deinstallieren** – Der 90-Sekunden-Poll prüft jetzt nicht nur `winget list`, sondern parallel `Get-AppxPackage` und die ARP-Registry. Damit werden falsch-positive „erfolgreich"-Meldungen vermieden, wenn das Programm in Wirklichkeit noch installiert ist.
+
+### Verbesserungen
+
+- **Korrektes Appstallo-Icon in der Taskleiste** – Die EXE setzt nun beim Start eine eigene **AppUserModelID** (`Appstallo.WingetSuite`) und der PowerShell-Host-Prozess wird konsistent mit dem eingebetteten Appstallo-Icon versehen. Damit zeigt Windows beim Anpinnen direkt aus dem laufenden Programm das Appstallo-Icon an – das frühere PowerShell-Icon und der weisse Platzhalter treten nicht mehr auf. Anpinnen direkt aus der laufenden Anwendung funktioniert jetzt korrekt; der frühere Workaround über das Startmenü ist nicht mehr nötig.
+- **Automatischer Rescan nach Bibliotheks-Installation** – Nach erfolgreichem Klick auf den Zurueck-Button werden die installierten IDs neu eingelesen und die Bibliothek-Ansicht wird komplett neu aufgebaut. Damit erscheinen Programme, die gerade aus einem Preset installiert wurden, sofort als „Installiert" markiert (mit grauer Schrift und Installiert-Badge) statt weiterhin als „Verfuegbar".
+- **Launcher bleibt im Vordergrund** – Nach Schliessen eines Moduls kommt das Launcher-Fenster wieder zuverlässig nach vorne.
+- **Sauberes Beenden** – Beim Schliessen des Launchers wird der Appstallo-Prozess vollständig beendet (kein Hintergrund-Prozess mehr im Task-Manager).
+- **Uninstaller-Titel vereinheitlicht** – Titelleiste und Überschrift heißen jetzt schlicht „Uninstaller" statt „Winget Uninstaller".
+- **Alphabetische Sortierung im Uninstaller** – Kategorien werden konsistent alphabetisch sortiert angezeigt.
 
 ### Behoben
 
