@@ -3013,7 +3013,20 @@ public static class IconExtractor {
     $presetBadge = $window.FindName("PresetBadge")
     if ($null -ne $presetBadge) {
         $presetBadge.Add_MouseLeftButtonUp({
-            Start-Process "https://appstallo.net"
+            # WICHTIG: URL explizit als URI öffnen und ShellExecute erzwingen.
+            # `Start-Process "https://appstallo.net"` (ohne /) wird auf manchen
+            # Systemen als Datei "appstallo.net" interpretiert -> falsche
+            # Datei-Assoziation greift (z. B. Download statt Browser).
+            $url = 'https://appstallo.net/'
+            try {
+                $psi = New-Object System.Diagnostics.ProcessStartInfo
+                $psi.FileName        = $url
+                $psi.UseShellExecute = $true
+                [System.Diagnostics.Process]::Start($psi) | Out-Null
+            } catch {
+                try { Start-Process -FilePath $url -ErrorAction Stop }
+                catch { Start-Process 'explorer.exe' $url }
+            }
         })
         $presetBadge.Add_MouseEnter({
             param($sender,$ea)
