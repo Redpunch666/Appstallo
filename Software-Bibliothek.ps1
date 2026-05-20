@@ -300,9 +300,8 @@ $xaml = @"
                                    Text="Installierte Software wird geprueft..."/>
                     </StackPanel>
                 </StackPanel>
-                <Border x:Name="PresetBadge" CornerRadius="4"
-                        Padding="14,7" VerticalAlignment="Center" HorizontalAlignment="Right"
-                        Cursor="Hand">
+                <Border x:Name="PresetBadge" CornerRadius="4" Padding="14,7"
+                        VerticalAlignment="Center" HorizontalAlignment="Right">
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                             <GradientStop Color="#F1C40F" Offset="0"/>
@@ -310,7 +309,7 @@ $xaml = @"
                         </LinearGradientBrush>
                     </Border.Background>
                     <TextBlock Foreground="#000000" FontSize="13" FontWeight="ExtraBold"
-                               Text="Gratis Presets zum Import über Extras ▾  |  APPSTALLO.NET &#x2197;"/>
+                               Text="Gratis Presets zum Import über Extras ▾  |  auf APPSTALLO.NET"/>
                 </Border>
             </Grid>
         </Border>
@@ -3009,34 +3008,8 @@ public static class IconExtractor {
 
     $sync.CloseButton.Add_Click({ $sync.Window.Close() })
 
-    # ── Preset-Badge ──────────────────────────────────────────────────────────
-    $presetBadge = $window.FindName("PresetBadge")
-    if ($null -ne $presetBadge) {
-        $presetBadge.Add_MouseLeftButtonUp({
-            # WICHTIG: URL explizit als URI öffnen und ShellExecute erzwingen.
-            # `Start-Process "https://appstallo.net"` (ohne /) wird auf manchen
-            # Systemen als Datei "appstallo.net" interpretiert -> falsche
-            # Datei-Assoziation greift (z. B. Download statt Browser).
-            $url = 'https://appstallo.net/'
-            try {
-                $psi = New-Object System.Diagnostics.ProcessStartInfo
-                $psi.FileName        = $url
-                $psi.UseShellExecute = $true
-                [System.Diagnostics.Process]::Start($psi) | Out-Null
-            } catch {
-                try { Start-Process -FilePath $url -ErrorAction Stop }
-                catch { Start-Process 'explorer.exe' $url }
-            }
-        })
-        $presetBadge.Add_MouseEnter({
-            param($sender,$ea)
-            $sender.Opacity = 0.82
-        })
-        $presetBadge.Add_MouseLeave({
-            param($sender,$ea)
-            $sender.Opacity = 1.0
-        })
-    }
+    # ── Preset-Badge (Info-Anzeige, ohne Klick) ──────────────────────────────
+
 
     # ── Export-Handler ────────────────────────────────────────────────────────
 
