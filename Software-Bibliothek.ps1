@@ -291,14 +291,28 @@ $xaml = @"
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0" Background="#0e0e0e">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="22,0,0,0">
-                <Border Width="4" Height="30" Background="#a93226" Margin="0,0,12,0"/>
-                <StackPanel>
-                    <TextBlock Text="SOFTWARE-BIBLIOTHEK" Foreground="White" FontSize="15" FontWeight="Bold"/>
-                    <TextBlock x:Name="StatusText" Foreground="#888888" FontSize="11" Margin="0,3,0,0"
-                               Text="Installierte Software wird geprueft..."/>
+            <Grid Margin="22,0,20,0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <Border Width="4" Height="30" Background="#a93226" Margin="0,0,12,0"/>
+                    <StackPanel>
+                        <TextBlock Text="SOFTWARE-BIBLIOTHEK" Foreground="White" FontSize="15" FontWeight="Bold"/>
+                        <TextBlock x:Name="StatusText" Foreground="#888888" FontSize="11" Margin="0,3,0,0"
+                                   Text="Installierte Software wird geprueft..."/>
+                    </StackPanel>
                 </StackPanel>
-            </StackPanel>
+                <Border x:Name="PresetBadge" CornerRadius="4"
+                        Padding="14,7" VerticalAlignment="Center" HorizontalAlignment="Right"
+                        Cursor="Hand">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#F1C40F" Offset="0"/>
+                            <GradientStop Color="#C0392B" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <TextBlock Foreground="#000000" FontSize="13" FontWeight="ExtraBold"
+                               Text="Gratis Presets zum Import über Extras ▾  |  APPSTALLO.NET &#x2197;"/>
+                </Border>
+            </Grid>
         </Border>
 
         <!-- SCAN PANEL -->
@@ -1388,7 +1402,7 @@ public static class IconExtractor {
             $handler.AllowAutoRedirect = $true
             $httpClient = New-Object System.Net.Http.HttpClient($handler)
             $httpClient.Timeout = [TimeSpan]::FromSeconds(5)
-            $httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Appstallo/1.9.0") | Out-Null
+            $httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Appstallo/1.9.1") | Out-Null
 
             $logFile = Join-Path $syncRef.IconCacheDir "_iconworker.log"
 
@@ -2995,6 +3009,22 @@ public static class IconExtractor {
 
     $sync.CloseButton.Add_Click({ $sync.Window.Close() })
 
+    # ── Preset-Badge ──────────────────────────────────────────────────────────
+    $presetBadge = $window.FindName("PresetBadge")
+    if ($null -ne $presetBadge) {
+        $presetBadge.Add_MouseLeftButtonUp({
+            Start-Process "https://appstallo.net"
+        })
+        $presetBadge.Add_MouseEnter({
+            param($sender,$ea)
+            $sender.Opacity = 0.82
+        })
+        $presetBadge.Add_MouseLeave({
+            param($sender,$ea)
+            $sender.Opacity = 1.0
+        })
+    }
+
     # ── Export-Handler ────────────────────────────────────────────────────────
 
     # ── Reset-Handler ─────────────────────────────────────────────────────────
@@ -3207,7 +3237,7 @@ tr:hover { background: #f8f8f8; }
             }
             $html += "</table>`n"
         }
-        $html += "<div class='footer'>Gesamt: $totalProgs Programme | $totalInstalled installiert | Appstallo v1.9.0</div>"
+        $html += "<div class='footer'>Gesamt: $totalProgs Programme | $totalInstalled installiert | Appstallo v1.9.1</div>"
         $html += "</body></html>"
         $tmpHtml = [System.IO.Path]::Combine($env:TEMP, "Appstallo-Liste.html")
         [System.IO.File]::WriteAllText($tmpHtml, $html, [System.Text.Encoding]::UTF8)
@@ -3639,7 +3669,7 @@ tr:hover { background: #f8f8f8; }
                 $assignObj | Add-Member -NotePropertyName $k -NotePropertyValue $sync.CustomAssignments[$k]
             }
             $backup = [PSCustomObject]@{
-                Version     = "1.9.0"
+                Version     = "1.9.1"
                 ExportDate  = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
                 ExportMode  = "full"
                 Programs          = $allPrograms
@@ -3671,7 +3701,7 @@ tr:hover { background: #f8f8f8; }
                 }
             }
             $backup = [PSCustomObject]@{
-                Version     = "1.9.0"
+                Version     = "1.9.1"
                 ExportDate  = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
                 ExportMode  = "selection"
                 Programs          = @($selPrograms | Where-Object { $_.Id -notlike "URL:*" })

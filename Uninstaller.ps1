@@ -1431,7 +1431,7 @@ public static class IconExtractor {
             $handler.AllowAutoRedirect = $true
             $httpClient = New-Object System.Net.Http.HttpClient($handler)
             $httpClient.Timeout = [TimeSpan]::FromSeconds(5)
-            $httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Appstallo/1.9.0") | Out-Null
+            $httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Appstallo/1.9.1") | Out-Null
 
             $logFile = Join-Path $syncRef.IconCacheDir "_iconworker.log"
 

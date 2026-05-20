@@ -4,6 +4,30 @@ Alle wesentlichen Aenderungen an **Appstallo** werden in dieser Datei dokumentie
 
 ---
 
+## v1.9.1 – 2026-05-20
+
+Wartungs-Release: erweiterter Icon-Katalog, einheitliche Versionsmeldung in allen Modulen sowie umfangreiche UX-Verbesserungen auf der Website (appstallo.net).
+
+### Desktop-App
+
+- **Icon-Katalog erweitert** – der eingebettete Icon-Cache enthaelt jetzt 157 Programm-Icons (zuvor ca. 140). Neu hinzugekommen sind u. a. AquaSnap und weitere haeufig nachgefragte Tools. Damit zeigen mehr Programme in Bibliothek, Browser, Updater und Uninstaller ohne CDN-Lookup direkt das richtige Icon.
+- **Einheitliche Versionsmeldung** – Versionsstring (`v1.9.1`) und User-Agent (`Appstallo/1.9.1`) wurden in *allen* Modulen konsistent auf 1.9.1 angehoben, inklusive Launcher-Footer, HTML-Export-Footer und Assembly-Metadaten der EXE.
+
+### Website (appstallo.net)
+
+- **Dynamische Download-Buttons** – jeder Download-Button („Desktop-App") zeigt jetzt automatisch die aktuell verfuegbare Programmversion und die genaue Dateigroesse der hochgeladenen EXE an. Die Werte werden serverseitig direkt aus der EXE ausgelesen (PE-Header) und nach Upload sofort aktualisiert – keine manuelle Pflege mehr noetig.
+- **Klarere Button-Beschriftung** – „Download" wurde flaechendeckend durch „Desktop-App" ersetzt, damit Erstbesucher sofort verstehen, was sie herunterladen.
+- **Einheitlicher Header & Footer auf allen Unterseiten** – `/builder`, `/faq`, `/contact`, `/suggest`, `/community-presets`, `/anleitung` und Preset-Detailseiten haben jetzt die volle Navigation (Presets · Preset-Builder · Anleitung · FAQ · Kontakt · Desktop-App) statt nur „Zur Startseite". Der Footer mit Impressum / GitHub / Changelog ist ebenfalls ueberall verfuegbar (im Builder dezent in der Sticky-Leiste).
+- **Deutsche Fehlerseiten** – 404- und allgemeine Fehlerseiten sind nun komplett auf Deutsch („Seite nicht gefunden", „Erneut versuchen", „Zur Startseite") statt halb englisch / halb deutsch.
+- **Admin-Pille versteckt** – der „Admin"-Login-Button unten links ist fuer Besucher nicht mehr sichtbar; er erscheint nur noch innerhalb des `/admin`-Bereichs.
+- **Kleinere Korrekturen** – im Preset-Builder „Tipp" statt „Tip", Platzhalter-Icon-Hinweis von der Anleitungs-Uebersicht entfernt, redundante „Zur Startseite"-Links entfernt.
+
+### Hinweis fuer Entwickler
+
+Es gibt keine Aenderungen am Preset-Dateiformat. Bestehende Presets aus 1.9.0 bleiben uneingeschraenkt kompatibel.
+
+---
+
 ## v1.9.0 – 2026-05-16
 
 Minor-Release mit Architektur-Refactor, erweiterter Behandlung verschiedener Installer-Typen (PWAs, MSIX, Squirrel), korrektem Taskleisten-Icon und automatischem Rescan nach Bibliotheks-Installation.

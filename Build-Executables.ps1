@@ -107,8 +107,8 @@ using System.Threading;
 [assembly: AssemblyProduct("Appstallo")]
 [assembly: AssemblyCopyright("Copyright (c) 2026 Sven Kuhlow")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyVersion("1.9.0.0")]
-[assembly: AssemblyFileVersion("1.9.0.0")]
+[assembly: AssemblyVersion("1.9.1.0")]
+[assembly: AssemblyFileVersion("1.9.1.0")]
 
 class AppstalloApp {
 
@@ -223,7 +223,7 @@ class AppstalloApp {
         Log "ERFOLG: Appstallo.exe ($kb KB)" "Green"
         Log "Pfad  : $out" "Gray"
         Log "" ; Log "Metadaten:" "DarkGray"
-        Log "  Produkt   : Appstallo 1.9.0" "DarkGray"
+        Log "  Produkt   : Appstallo 1.9.1" "DarkGray"
         Log "  Entwickler: Sven Kuhlow" "DarkGray"
         Log "  Copyright : (c) 2026 Sven Kuhlow" "DarkGray"
         Log "" ; Log "EXE ist vollstaendig standalone." "DarkGray"
